@@ -1,9 +1,26 @@
 # Generative-Model-for-Visual-Signals
 This repository contains an implementation of the Deep Image Prior (DIP) method for image restoration tasks. The notebook demonstrates the training and evaluation of a DIP model to denoise a given target image. Namely, "Guiding DIP Early Stopping with DDPM-inspired Supervision". 
 
-![Target Image](./cute-spitz-dog.jpg "Target Image")
-![Image with Noise](./noisy_image.jpg "Noisy Image")
-![Alt text](./final_dip_generated_image.jpg "Final Restored Image")
+<figure>
+  <img
+  src="./target_image.jpg"
+  alt="Target Image">
+  <figcaption>Target Image</figcaption>
+</figure>
+
+<figure>
+  <img
+  src="./noisy_image.jpg"
+  alt="Noisy Image">
+  <figcaption>Noisy Image</figcaption>
+</figure>
+
+<figure>
+  <img
+  src="./final_dip_generated_image.jpg"
+  alt="Restored Image">
+  <figcaption>Final Restored Image</figcaption>
+</figure>
 
 Please note that this is only a guided notebook and was not set to its full potential due to computational constraints. 
 
@@ -28,7 +45,7 @@ pip install torch torchvision scikit-image Pillow matplotlib numpy
 
 ### Loading and Preparing the Target Image
 
-The notebook starts by loading and preparing the target image. The target image is resized to 128x128 pixels and converted to a tensor.
+The notebook starts by loading and preparing the target image. The target image is downsized to 128x128 pixels for simpler computational complexity and converted to a tensor.
 
 ### Model Architecture
 
