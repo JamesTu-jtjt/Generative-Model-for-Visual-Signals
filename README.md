@@ -8,12 +8,16 @@ This repository contains an implementation of the Deep Image Prior (DIP) method 
   <figcaption>Target Image</figcaption>
 </figure>
 
+
+
 <figure>
   <img
   src="./noisy_image.jpg"
   alt="Noisy Image">
   <figcaption>Noisy Image</figcaption>
 </figure>
+
+
 
 <figure>
   <img
