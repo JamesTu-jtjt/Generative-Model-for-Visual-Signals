@@ -62,8 +62,8 @@ Two models are defined in the notebook:
 
 The training loop involves the following steps:
 
-1. Generating a noisy version of the target image using a noise schedule.
-2. Forward passing the noisy image through the DIP model.
+1. Generating a noisy version of the target image using a noise schedule. (DDPM Supervision)
+2. Forward passing the noisy image through the DIP model. (DDPM Supervision)
 3. Calculating the loss between the model's output and the target image.
 4. Backpropagating the loss and updating the model's weights.
 5. Logging the loss, PSNR, and SSIM at regular intervals.
