@@ -2,28 +2,28 @@
 This repository contains an implementation of the Deep Image Prior (DIP) method for image restoration tasks. The notebook demonstrates the training and evaluation of a DIP model to denoise a given target image. Namely, "Guiding DIP Early Stopping with DDPM-inspired Supervision". 
 
 <figure>
+  <figcaption>Target Image</figcaption>
   <img
   src="./target_image.jpg"
   alt="Target Image">
-  <figcaption>Target Image</figcaption>
 </figure>
 
 
 
 <figure>
+  <figcaption>Noisy Image</figcaption>
   <img
   src="./noisy_image.jpg"
   alt="Noisy Image">
-  <figcaption>Noisy Image</figcaption>
 </figure>
 
 
 
 <figure>
+  <figcaption>Final Restored Image</figcaption>
   <img
   src="./final_dip_generated_image.jpg"
   alt="Restored Image">
-  <figcaption>Final Restored Image</figcaption>
 </figure>
 
 Please note that this is only a guided notebook and was not set to its full potential due to computational constraints. 
@@ -62,8 +62,8 @@ Two models are defined in the notebook:
 
 The training loop involves the following steps:
 
-1. Generating a noisy version of the target image using a noise schedule.
-2. Forward passing the noisy image through the DIP model.
+1. Generating a noisy version of the target image using a noise schedule. (DDPM Supervision)
+2. Forward passing the noisy image through the DIP model. (DDPM Supervision)
 3. Calculating the loss between the model's output and the target image.
 4. Backpropagating the loss and updating the model's weights.
 5. Logging the loss, PSNR, and SSIM at regular intervals.
