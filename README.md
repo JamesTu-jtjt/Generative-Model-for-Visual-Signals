@@ -56,7 +56,7 @@ The notebook starts by loading and preparing the target image. The target image 
 Two models are defined in the notebook:
 
 1. **DIPModel**: A simple Convolutional Neural Network (CNN) with four convolutional layers and ReLU activations.
-2. **DeepDIPModel**: A deeper CNN with six convolutional layers and ReLU activations.
+2. **DeepDIPModel**: A deeper CNN with six convolutional layers and ReLU activations. (Requires more computational resources)
 
 ### Training the DIP Model
 
